@@ -157,10 +157,6 @@ button:hover {
   border-radius: 10px;
 }
 
-.logo {
-  vertical-align:middle;
-}
-
 .title {
   color: #bf4d28;
   margin-left: 50px; 
@@ -317,7 +313,7 @@ button:hover {
 }
 
 .team-cover-text {
-  width: 940px;
+  width: 70%;
   display:inline-block;
   background-color: none;
   color:#bf4d28; 
@@ -446,7 +442,133 @@ button:hover {
   width: 110px; 
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+
+@media only screen and (max-width: 1000px) {
+
+  .team-cover-text {
+    font-size: 40px; 
+  }
+
+  .contact-info {
+    width: 600px; 
+    padding-bottom: 10px; 
+    padding-top: 10px; 
+  }
+
+  .map {
+    width: 560px;  
+  }
+ 
+ .contact-column {
+   float: left; 
+   width: 33.33%; 
+   text-align: center; 
+ }
+ 
+ .contact-item {
+   margin-left: 20px; 
+   margin-right: 20px; 
+   padding: 5px; 
+ }
+ 
+ .contact-title {
+   font-size: 20px;
+   padding: 10px;  
+ }
+ 
+ .contact-button { 
+   margin: 10px;  
+   height: 30px; 
+   width: 100px; 
+   border-radius: 15px;
+   margin-bottom: 20px;
+ }
+ 
+ .contact-image-img {
+   height: 30px; 
+   padding: 15px; 
+ }
+ 
+ .contact-form-div {
+   padding: 20px; 
+   width: 520px; 
+   margin-bottom: 40px;  
+   margin-top: 10px; 
+ }
+  
+ .form-item {
+   font-size: 15px; 
+ }
+ 
+ 
+ .contact-form-header {
+   font-size: 18px;
+   padding: 10px;  
+   
+ }
+ 
+ .form-email {
+   width: 300px;
+ }
+ 
+ .form-button {
+   height: 30px; 
+   width: 80px; 
+ }
 }
+
+@media only screen and (max-width: 700px) {
+
+  .team-cover-text {
+    font-size: 25px; 
+  }
+
+  .contact-info {
+    width: 300px; 
+    padding-bottom: 5px; 
+    padding-top: 5px; 
+  }
+
+  .map {
+    width: 290px;  
+  }
+ 
+ .contact-column {
+   width: 100%;
+   margin-bottom: 20px; 
+ }
+ 
+ .contact-item {
+   margin-left: 5px; 
+   margin-right: 5px; 
+   padding: 5px; 
+ }
+ 
+ .contact-form-div {
+   padding: 5px; 
+   width: 280px; 
+   margin-bottom: 40px;  
+   margin-top: 10px; 
+ }
+  
+ .form-item {
+   font-size: 12px; 
+ }
+ 
+ 
+ .contact-form-header {
+   font-size: 15px;
+   padding: 10px;  
+   
+ }
+ 
+ .form-email {
+   width: 200px;
+ }
+ 
+ .form-button {
+   height: 25px; 
+   width: 60px; 
+ }
+}
+
