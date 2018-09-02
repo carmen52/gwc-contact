@@ -22,6 +22,10 @@ import './App.css';
 import './common/header.css';
 import {Header, Footer} from './common/header.js'
 
+import MailchimpSubscribe from "react-mailchimp-subscribe"
+
+const actionURL = "https://neu.us15.list-manage.com/subscribe/post?u=88dd80df664d10f8289493412&amp;id=b9f017b346"
+
 
 class App extends Component {
   constructor(props) {
@@ -59,7 +63,7 @@ class App extends Component {
             </div>
           </div>
         </div>
-        <iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5898.304414487892!2d-71.0950657451163!3d42.33927816720446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a21f1bc9735%3A0x655e0c46cdbdf694!2sWest+Village+G!5e0!3m2!1sen!2sus!4v1535663511720" width="822px" height="350" frameborder="0"  allowfullscreen></iframe>
+        <iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5898.304414487892!2d-71.0950657451163!3d42.33927816720446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a21f1bc9735%3A0x655e0c46cdbdf694!2sWest+Village+G!5e0!3m2!1sen!2sus!4v1535663511720" width="822px" height="350" frameBorder="0"  allowFullScreen></iframe>
         <Form/>
         <Footer/>
       </div>
@@ -102,14 +106,11 @@ class Form extends React.Component {
     return(
       <div className="contact-form-div">
       <div className="contact-form-header" > Subscribe to our email list </div>
-        <form id="contact-form" className="contact-form" >
-          <div className="form-group">
-            <label className="form-item" for="exampleInputEmail1">Email address: </label>
-            <input type="email" className="form-item form-email" id="email" aria-describedby="emailHelp" />
-            <button type="submit" className="form-item form-button">Submit</button>
-          </div>
-        </form>
-      </div>
+          <MailchimpSubscribe url={actionURL}/>
+       </div>
+
+        
+       
     ); 
   }
 }
